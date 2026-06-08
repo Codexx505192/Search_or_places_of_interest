@@ -1,8 +1,10 @@
 import { ways } from "@/data";
+import Button from "@/shared/ui/Button";
 import Cart_btn from "@/shared/ui/Cart_btn";
 import Filtr from "@/shared/ui/Filtr";
 import Footer from "@/shared/ui/Footer";
 import Header from "@/shared/ui/Header";
+import WayToTeach from "@/shared/ui/WayToTeach";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
@@ -12,16 +14,9 @@ export default function Home() {
 const [filterOpen, setFilterOpen] = useState(false)
 const [requEst, setRequestOpen] = useState(false)
 const [help, setOpenHelp] = useState(false)
+const [gp, setOpenGp] = useState(false)
   
-function WayToTeach(props){
-  return(
-    <>
-     <li>
-       {props.description}
-    </li>
-    </>
-  )
-}
+
 
 
   return (
@@ -895,6 +890,41 @@ function WayToTeach(props){
 
                  </div>
 
+                 <div className={`gp_modal ${gp ? "actv_2" : ""}`}>
+                   <div className="cls_tp">
+                    <button className="close3" onClick={() => setOpenGp(false)}>
+                    <img src="./list_img/cls.png" alt="close" />
+                   </button>
+                  
+                   <p className="txt26">
+                       помощь <span className="b_txt">эксперта</span>
+                   </p>
+
+                    <form action="#">
+                      
+                    <div className="gp_input_bl">
+                        <input type="text" placeholder="Ваше имя" className="gp_input"/>
+                      <input type="tel" placeholder="Ваш номер телефона" className="gp_input"/>
+                      <input type="tel" placeholder="Удобное время для звонка" className="gp_input"/>
+
+                      <div className="dt_block">
+                      <input type="date" name="Дата" id="" className="date_itm"/>
+
+                      <div className="counter_2">
+                        <p className="txt27">Кол-во гостей</p>
+                      </div>
+                    </div>
+                      
+                      <input type="text" placeholder="Ваше сообщение (необязательно)" className="gp_input"/>
+                        
+                        <button className="btn10">
+                          Отправить
+                        </button>
+                    </div>
+                    </form>
+                   </div>
+                 </div> 
+
                  <div className="v_itm">
                   <p className="txt16">
                     3
@@ -912,8 +942,8 @@ function WayToTeach(props){
                        предложение в чат личного кабинета...  <Link href="#" className="lnk7">подробнее</Link>
                     </p>
 
-                    <button className="btn7 btq">
-                       Разместить запрос
+                    <button className="btn7 btq" onClick={() => setOpenGp(!gp)}>
+                       Получить помощь
                     </button>
                   </div>
 
@@ -1023,11 +1053,22 @@ function WayToTeach(props){
                 <div className="ul_b">
                    <ul className="ul3">
                       <WayToTeach description={ways[0].description}/>
-                      <WayToTeach description={ways[1].description}/>
-                      <WayToTeach description={ways[2].description}/>
+
+                      <WayToTeach {...ways[1]}/>
+                      <WayToTeach {...ways[2]}/>
                    </ul>
                 </div>
 
+              </div>
+            </section>
+
+            <section>
+              <div className="container">
+               <div className="btn_block_q">
+                <Button>Подход</Button>
+                <Button>Доступность</Button>
+                <Button>Концентрация</Button>
+               </div>
               </div>
             </section>
 
