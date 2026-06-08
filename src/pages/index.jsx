@@ -16,7 +16,10 @@ const [requEst, setRequestOpen] = useState(false)
 const [help, setOpenHelp] = useState(false)
 const [gp, setOpenGp] = useState(false)
   
-
+function handleClick(){
+  console.log("button clicked");
+  
+}
 
 
   return (
@@ -1065,10 +1068,16 @@ const [gp, setOpenGp] = useState(false)
             <section>
               <div className="container">
                <div className="btn_block_q">
-                <Button>Подход</Button>
-                <Button>Доступность</Button>
-                <Button>Концентрация</Button>
+                <Button onClick={handleClick}>Подход</Button>
+                <Button onClick={handleClick}>Доступность</Button>
+                <Button onClick={handleClick}>Концентрация</Button>
                </div>
+              </div>
+            </section>
+
+            <section>
+              <div className="container">
+                
               </div>
             </section>
 

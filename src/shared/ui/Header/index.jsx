@@ -49,7 +49,7 @@ const [openMenu, setOpenMenu] = useState(false)
 
                 <ul className="ul">
                     <li>
-                        <Link href="#" className="lnk">
+                        <Link href="/Platform" className="lnk">
                         О платформе
                         </Link>
                     </li>
@@ -85,7 +85,7 @@ const [openMenu, setOpenMenu] = useState(false)
                     <div className="header_menu">
                         <ul className={`header__list ${openMenu ? "_active" : ""}`}>
                             <li>
-                                <Link href="#" className="lnkp">
+                                <Link href="/Platform" className="lnkp">
                                 О платформе
                                 </Link>
                             </li>
