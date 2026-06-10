@@ -1,5 +1,5 @@
 .venues_block{
-    background-color: greenyellow;
+    background-color: #FFFFFF;
     padding: 20px 0;
 }
 
@@ -31,6 +31,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 10px 0;
+margin-bottom: 30px;
 }
 
 .vns_imt_top{
@@ -48,12 +49,114 @@ font-size: 26px;
 color: #333333;
 }
 
+.venues_ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+color: #585F66;
+}
+
+.venues_btn{
+    border: none;
+    width: 228px;
+height: 62px;
+border-radius: 50px;
+background: conic-gradient(from 180deg at 50% 50%, #8E2DBC 0deg, #FFC5BD 120deg, #DB7AE3 240deg, #0066CC 360deg);
+backdrop-filter: blur(36px);
+margin-top: 69px;
+}
+
+.vns_lnk{
+text-decoration: none;
+font-family: Raleway;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+.vnm_bi{
+    background-color: #FFFFFF;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vns_txt3{
+font-family: Poiret One;
+font-weight: 400;
+font-style: Regular;
+font-size: 42px;
+text-align: center;
+text-transform: uppercase;
+padding: 0 0 105px;
+}
+
+.vnm_ss{
+    padding: 20px 0;
+    /* width: 989px; */
+
+    background-image: url(/vnue_img/vnm_q.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    gap: 331px;
+}
+
+
+.vnm_s_top{
+    display: flex;
+    align-items: center;
+    gap: 479px;
+}
+
+.vnm_elm{
+width: 255px;
+height: 234px;
+border-radius: 30px;
+background-color: #FFFFFF;
+box-shadow: 0px 4px 15px 0px #694E4B24;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.vns_txt4{
+font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+text-align: center;
+}
+
+
+.vns_txt4s{
+    color: #0066CC;
+}
 
 
 @media(max-width: 1200px){
     .container{
         width: 900px;
     }
+
+
+
+    .vnm_s_top {
+    align-items: center;
+    gap: 388px;
+    display: flex;
+}
 }
 
 
@@ -62,6 +165,20 @@ color: #333333;
     .container{
         width: 700px;
     }
+
+
+    .vnm_s_top {
+    align-items: center;
+    gap: 184px;
+    display: flex;
+}
+
+
+
+.vns_txt3 {
+    padding: 0 0 105px;
+    font-size: 33px;
+}
 }
 
 
@@ -70,6 +187,28 @@ color: #333333;
     .container{
         width: 500px;
     }
+
+
+
+    .venus_itm {
+    width: 490px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+
+.vns_txt {
+    padding: 0 0 40px;
+    font-size: 34px;
+}
+
+
+.vnm_s_top {
+    align-items: center;
+    gap: 184px;
+    display: flex;
+    flex-direction: column;
+}
 }
 
 
@@ -77,4 +216,29 @@ color: #333333;
     .container{
         width: 100%;
     }
+}
+
+@media(max-width: 375px){
+    .container{
+        width: 100%;
+    }
+
+
+    .venus_itm {
+    width: 350px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+
+.vns_txt {
+    padding: 0 0 40px;
+    font-size: 29px;
+}
+
+
+.vns_txt3 {
+    padding: 0 0 105px;
+    font-size: 28px;
+}
 }

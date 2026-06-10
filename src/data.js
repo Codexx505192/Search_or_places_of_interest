@@ -53,7 +53,7 @@ export const ws = [
 ]
 
 
-wys2 = [
+export const wys2 = [
     {
         description:  "Прямая связь с площадкой в режиме реального времени"
     },
