@@ -285,7 +285,7 @@ width: 100%;
 
 
 .plt_block{
-    background-color: greenyellow;
+    background-color: #FFFFFF;
     padding: 20px 0;
 }
 
@@ -310,7 +310,6 @@ text-transform: uppercase;
 .nws_itm{
 width: 350px;
 height: 225px;
-background-color: #995e5e;
 box-shadow: 0px 4px 15px 0px #694E4B24;
 
 background-image: url(/platform_img/Subtract.png);
@@ -322,6 +321,8 @@ justify-content: center;
 align-items: center;
 }
 
+
+
 .txt_platform12{
 font-family: Raleway;
 font-weight: 500;
@@ -332,7 +333,7 @@ color: #585F66;
 }
 
 .pl_elm{
-    background-color: rebeccapurple;
+    background-color: #F8DA75;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,16 +342,12 @@ width: 98px;
 height: 98px;
 position: absolute;
 top: -39px;
-left: 127px;
 box-shadow: 3px 4px 10px 0px #4E063E2E;
 border-radius: 50%;
 }
 
 
-.pl_elm img{
-    width: 100%;
-    height: 100%;
-}
+
 
 
 @media(max-width: 1200px){
@@ -364,6 +361,19 @@ border-radius: 50%;
     width: 540px;
     height: 500px;
     display: flex;
+}
+
+
+.nws_flex {
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pl_elm {
+    display: none;
 }
 }
 
@@ -382,6 +392,12 @@ border-radius: 50%;
     align-items: center;
     gap: 40px;
     display: flex;
+}
+
+
+.pltfrm_img {
+    width: 410px;
+    height: 285px;
 }
 }
 

@@ -15,10 +15,13 @@ const [filterOpen, setFilterOpen] = useState(false)
 const [requEst, setRequestOpen] = useState(false)
 const [help, setOpenHelp] = useState(false)
 const [gp, setOpenGp] = useState(false)
+
+console.log("App component render");
+let content = "нажми на кнопку"
   
-function handleClick(){
-  console.log("button clicked");
-  
+function handleClick(type){
+  console.log("button clicked", type);
+  content = type
 }
 
 
@@ -1068,9 +1071,11 @@ function handleClick(){
             <section>
               <div className="container">
                <div className="btn_block_q">
-                <Button onClick={handleClick}>Подход</Button>
-                <Button onClick={handleClick}>Доступность</Button>
-                <Button onClick={handleClick}>Концентрация</Button>
+                <Button onClick={() => handleClick()}>Подход</Button>
+                <Button onClick={() => handleClick()}>Доступность</Button>
+                <Button onClick={() => handleClick()}>Концентрация</Button>
+
+                <p>{content}</p>
                </div>
               </div>
             </section>

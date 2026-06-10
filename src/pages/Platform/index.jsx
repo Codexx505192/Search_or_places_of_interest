@@ -1,6 +1,7 @@
 import Header from "@/shared/ui/Header";
 import styles from "./Plarform.module.css"
 import Link from "next/link";
+import Footer from "@/shared/ui/Footer";
 
 export default function Page(){
     return(
@@ -252,16 +253,43 @@ export default function Page(){
              <div className={styles.nws_flex}>
               <div className={styles.nws_itm}>
               <div className={styles.pl_elm}>
-                <img src="" alt="" />
+                <img src="./platform_img/people.png" alt="" />
               </div>
 
                 <p className={styles.txt_platform12}>
                  Площадкам
                 </p>
               </div>
+
+
+              <div className={styles.nws_itm}>
+              <div className={styles.pl_elm}>
+                <img src="./platform_img/rotate.png" alt="" />
+              </div>
+
+                <p className={styles.txt_platform12}>
+                 Площадкам
+                </p>
+              </div>
+
+              <div className={styles.nws_itm}>
+              <div className={styles.pl_elm}>
+                <img src="./platform_img/str.png" alt="" />
+              </div>
+
+                <p className={styles.txt_platform12}>
+                 Новые продукты GP
+                </p>
+              </div>
              </div>
               
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <Footer/>
           </div>
         </section>
         </>

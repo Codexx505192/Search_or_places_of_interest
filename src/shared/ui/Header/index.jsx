@@ -60,7 +60,7 @@ const [openMenu, setOpenMenu] = useState(false)
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="lnk">
+                        <Link href="/Guests" className="lnk">
                         Гостям
                         </Link>
                     </li>
