@@ -55,7 +55,7 @@ const [openMenu, setOpenMenu] = useState(false)
                     </li>
 
                     <li>
-                        <Link href="#" className="lnk">
+                        <Link href="/Venue" className="lnk">
                         Площадкам
                         </Link>
                     </li>
@@ -91,13 +91,13 @@ const [openMenu, setOpenMenu] = useState(false)
                             </li>
 
                             <li>
-                                <Link href="#" className="lnkp">
+                                <Link href="/Venue" className="lnkp">
                                 Площадкам
                                 </Link>
                             </li>
 
                             <li>
-                                <Link href="#" className="lnkp">
+                                <Link href="/Guests" className="lnkp">
                                 Гостям
                                 </Link> 
                             </li>

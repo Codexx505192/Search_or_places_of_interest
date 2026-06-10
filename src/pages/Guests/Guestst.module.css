@@ -1,5 +1,5 @@
 .gusts_block{
-    background-color: cadetblue;
+    background-color: #FFFFFF;
     padding: 20px 0;
 }
 
@@ -10,8 +10,6 @@
     align-items: center;
 
     padding: 20px 0;
-
-    background-color: greenyellow;
 }
 
 .gusts_txt{
@@ -79,6 +77,26 @@ font-size: 14px;
 color: #585F66;
 }
 
+.guest_btn{
+width: 228px;
+height: 62px;
+border-radius: 50px;
+background: conic-gradient(from 180deg at 50% 50%, #8E2DBC 0deg, #FFC5BD 120deg, #DB7AE3 240deg, #0066CC 360deg);
+backdrop-filter: blur(36px);
+
+border: none;
+margin-top: 34px;
+}
+
+.gst_lnk{
+text-decoration: none;
+font-family: Raleway;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+color: #FFFFFF;
+}
+
 
 
 @media(max-width: 1200px){
@@ -99,10 +117,34 @@ color: #585F66;
     .container{
         width: 500px;
     }
+
+    .guest_bi {
+    width: 480px;
+    height: 500px;
+    margin-top: 40px;
+}
 }
 
 @media(max-width: 576px){
     .container{
         width: 100%;
     }
+}
+
+@media(max-width: 375px){
+    .container{
+        width: 100%;
+    }
+
+
+    .guest_bi {
+    width: 360px;
+    height: 500px;
+    margin-top: 40px;
+}
+
+
+.gusts_txt2 {
+    font-size: 34px;
+}
 }
