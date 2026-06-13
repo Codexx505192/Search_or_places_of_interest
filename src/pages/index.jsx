@@ -17,6 +17,7 @@ const [requEst, setRequestOpen] = useState(false)
 const [help, setOpenHelp] = useState(false)
 const [gp, setOpenGp] = useState(false)
 
+
 console.log("App component render");
 let content = "нажми на кнопку"
   
@@ -256,7 +257,7 @@ function handleClick(type){
 
 
                             <button className="btn3">
-                              <Link href="#" className="lnk5">
+                              <Link href="/Product" className="lnk5">
                               Подробнее
                               </Link>
                             </button>
@@ -331,82 +332,7 @@ function handleClick(type){
 
 
                             <button className="btn3">
-                              <Link href="#" className="lnk5">
-                              Подробнее
-                              </Link>
-                            </button>
-                          </div>
-
-                      </div>
-                    </div>
-
-
-                    <div className="last_itm">
-                     <div className="last_top">
-                      <img src="./img/lst_top.png" alt="" />
-                      
-                      <div className="favorite_itm">
-                        <img src="./img/fvrt.png" alt="" />
-                      </div>
-                     </div>
-
-                      <div className="last_bottom">
-                        <p className="txt8">
-                          Ресторан Londri у метро <br />
-                          Лубянка
-                        </p>
-
-                        <div className="str_block">
-                          <div className="str">
-                            <img src="./img/star.png" alt="" />
-                          </div>
-                          <div className="str">
-                            <img src="./img/star.png" alt="" />
-                          </div>
-                          <div className="str">
-                            <img src="./img/star.png" alt="" />
-                          </div>
-
-                          <p className="txt9">
-                            (23)
-                          </p>
-                        </div>
-                        
-                        <div className="lst_txt">
-                          <div className="ty">
-                            <div className="lctn">
-                              <img src="./img/location.png" alt="" />
-                            </div>
-                            <p className="txt10">
-                            Сокольники
-                          </p>
-                          </div>
-
-
-                          <p className="txt11">5 мин пешком</p>
-                        </div>
-
-
-                        <div className="lst_hmm">
-                          <div className="usrgi">
-                            <img src="./img/Users.png" alt="" />
-                          </div>
-
-                          <p className="txt12">35/100/150</p>
-                        </div>
-                          
-                          <div className="lst_txt_btn">
-                            <div className="money_block">
-                            <div className="wlt">
-                              <img src="./img/Wallet.png" alt="" />
-                            </div>
-
-                             <p className="txt13">$$$</p>
-                            </div>
-
-
-                            <button className="btn3">
-                              <Link href="#" className="lnk5">
+                              <Link href="/Product" className="lnk5">
                               Подробнее
                               </Link>
                             </button>
@@ -481,7 +407,82 @@ function handleClick(type){
 
 
                             <button className="btn3">
-                              <Link href="#" className="lnk5">
+                              <Link href="/Product" className="lnk5">
+                              Подробнее
+                              </Link>
+                            </button>
+                          </div>
+
+                      </div>
+                    </div>
+
+
+                    <div className="last_itm">
+                     <div className="last_top">
+                      <img src="./img/lst_top.png" alt="" />
+                      
+                      <div className="favorite_itm">
+                        <img src="./img/fvrt.png" alt="" />
+                      </div>
+                     </div>
+
+                      <div className="last_bottom">
+                        <p className="txt8">
+                          Ресторан Londri у метро <br />
+                          Лубянка
+                        </p>
+
+                        <div className="str_block">
+                          <div className="str">
+                            <img src="./img/star.png" alt="" />
+                          </div>
+                          <div className="str">
+                            <img src="./img/star.png" alt="" />
+                          </div>
+                          <div className="str">
+                            <img src="./img/star.png" alt="" />
+                          </div>
+
+                          <p className="txt9">
+                            (23)
+                          </p>
+                        </div>
+                        
+                        <div className="lst_txt">
+                          <div className="ty">
+                            <div className="lctn">
+                              <img src="./img/location.png" alt="" />
+                            </div>
+                            <p className="txt10">
+                            Сокольники
+                          </p>
+                          </div>
+
+
+                          <p className="txt11">5 мин пешком</p>
+                        </div>
+
+
+                        <div className="lst_hmm">
+                          <div className="usrgi">
+                            <img src="./img/Users.png" alt="" />
+                          </div>
+
+                          <p className="txt12">35/100/150</p>
+                        </div>
+                          
+                          <div className="lst_txt_btn">
+                            <div className="money_block">
+                            <div className="wlt">
+                              <img src="./img/Wallet.png" alt="" />
+                            </div>
+
+                             <p className="txt13">$$$</p>
+                            </div>
+
+
+                            <button className="btn3">
+                              <Link href="/Product" className="lnk5">
                               Подробнее
                               </Link>
                             </button>

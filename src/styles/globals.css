@@ -1047,6 +1047,10 @@ color: #FFFFFF;
 }
 
 
+.cht_mdl{
+  display: none;
+}
+
 
 
 @media(max-width: 1200px){
@@ -1620,6 +1624,21 @@ text-transform: uppercase;
 
 .b_txt{
   color: #0066CC;
+}
+
+.cht_mdl_actvv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: absolute;
+  left: 0; top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: #bb42c6;
+  z-index: 50;
 }
 }
 
