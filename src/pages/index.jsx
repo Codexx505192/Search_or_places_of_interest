@@ -6,6 +6,7 @@ import Footer from "@/shared/ui/Footer";
 import Header from "@/shared/ui/Header";
 import Reservations from "@/shared/ui/Reservations";
 import WayToTeach from "@/shared/ui/WayToTeach";
+import { difference } from "next/dist/build/utils";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
@@ -16,14 +17,13 @@ const [filterOpen, setFilterOpen] = useState(false)
 const [requEst, setRequestOpen] = useState(false)
 const [help, setOpenHelp] = useState(false)
 const [gp, setOpenGp] = useState(false)
-
+const [content, setContent] = useState("нажми на кнопку")
 
 console.log("App component render");
-let content = "нажми на кнопку"
   
 function handleClick(type){
   console.log("button clicked", type);
-  content = type
+ setContent(type)
 }
 
 
@@ -867,11 +867,11 @@ function handleClick(type){
             <section>
               <div className="container">
                <div className="btn_block_q">
-                <Button onClick={() => handleClick()}>Подход</Button>
-                <Button onClick={() => handleClick()}>Доступность</Button>
-                <Button onClick={() => handleClick()}>Концентрация</Button>
+                <Button onClick={() => handleClick("way")}>Подход</Button>
+                <Button onClick={() => handleClick("easy")}>Доступность</Button>
+                <Button onClick={() => handleClick("programm")}>Концентрация</Button>
 
-                <p>{content}</p>
+                <p>{difference[content]}</p>
                </div>
               </div>
             </section>
