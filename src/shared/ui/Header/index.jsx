@@ -69,7 +69,7 @@ const [openMenu, setOpenMenu] = useState(false)
                  <div className="hdr_btm_rigth">
                     <ul className="ul2">
                         <li>
-                            <Link href="#" className="lnk2">
+                            <Link href="/Request" className="lnk2">
                             + Разместить запрос
                             </Link>
                         </li>
@@ -115,7 +115,7 @@ const [openMenu, setOpenMenu] = useState(false)
                             </li>
 
                             <li>
-                                <Link href="#" className="lnkp2">
+                                <Link href="/Request" className="lnkp2">
                                 + Разместить запрос
                                 </Link> 
                             </li>

@@ -1,4 +1,4 @@
-import { ways } from "@/data";
+import { diffrences, ways } from "@/data";
 import Button from "@/shared/ui/Button";
 import Cart_btn from "@/shared/ui/Cart_btn";
 import Filtr from "@/shared/ui/Filtr";
@@ -6,7 +6,6 @@ import Footer from "@/shared/ui/Footer";
 import Header from "@/shared/ui/Header";
 import Reservations from "@/shared/ui/Reservations";
 import WayToTeach from "@/shared/ui/WayToTeach";
-import { difference } from "next/dist/build/utils";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
@@ -871,7 +870,7 @@ function handleClick(type){
                 <Button onClick={() => handleClick("easy")}>Доступность</Button>
                 <Button onClick={() => handleClick("programm")}>Концентрация</Button>
 
-                <p>{difference[content]}</p>
+                <p>{diffrences[content]}</p>
                </div>
               </div>
             </section>
